@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RtRTestModelStoreContainer" CdmEntityContainer="RtRTestEntities">
+    <EntitySetMapping Name="TickerTests">
+      <EntityTypeMapping TypeName="RtRTestModel.TickerTest">
+        <MappingFragment StoreEntitySet="TickerTest">
+          <ScalarProperty Name="Ticker" ColumnName="Ticker" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Quarterlies">
+      <EntityTypeMapping TypeName="RtRTestModel.Quarterly">
+        <MappingFragment StoreEntitySet="Quarterly">
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Beta" ColumnName="Beta" />
+          <ScalarProperty Name="Dividend_Yield" ColumnName="Dividend Yield" />
+          <ScalarProperty Name="PBV_MRQ" ColumnName="PBV MRQ" />
+          <ScalarProperty Name="EV_EBITDA_2020" ColumnName="EV/EBITDA 2020" />
+          <ScalarProperty Name="EV_EBITDA_2019" ColumnName="EV/EBITDA 2019" />
+          <ScalarProperty Name="EV_EBITDA_2018" ColumnName="EV/EBITDA 2018" />
+          <ScalarProperty Name="EV_EBITDA_2017" ColumnName="EV/EBITDA 2017" />
+          <ScalarProperty Name="PS_2020" ColumnName="PS 2020" />
+          <ScalarProperty Name="PS_2019" ColumnName="PS 2019" />
+          <ScalarProperty Name="PS_2018" ColumnName="PS 2018" />
+          <ScalarProperty Name="PS_2017" ColumnName="PS 2017" />
+          <ScalarProperty Name="PE_2020" ColumnName="PE 2020" />
+          <ScalarProperty Name="PE_2019" ColumnName="PE 2019" />
+          <ScalarProperty Name="PE_2018" ColumnName="PE 2018" />
+          <ScalarProperty Name="PE_2017" ColumnName="PE 2017" />
+          <ScalarProperty Name="Revenue_FY_2020" ColumnName="Revenue FY 2020" />
+          <ScalarProperty Name="Revenue_FY_2019" ColumnName="Revenue FY 2019" />
+          <ScalarProperty Name="Revenue_FY_2018" ColumnName="Revenue FY 2018" />
+          <ScalarProperty Name="Revenue_FY_2017" ColumnName="Revenue FY 2017" />
+          <ScalarProperty Name="EPS_FY_2020" ColumnName="EPS FY 2020" />
+          <ScalarProperty Name="EPS_FY_2019" ColumnName="EPS FY 2019" />
+          <ScalarProperty Name="EPS_FY_2018" ColumnName="EPS FY 2018" />
+          <ScalarProperty Name="EPS_FY_2017" ColumnName="EPS FY 2017" />
+          <ScalarProperty Name="Revenue_Estimate_High" ColumnName="Revenue Estimate High" />
+          <ScalarProperty Name="Revenue_Estimate_Low" ColumnName="Revenue Estimate Low" />
+          <ScalarProperty Name="Revenue_Estimate_Mean" ColumnName="Revenue Estimate Mean" />
+          <ScalarProperty Name="EPS_Estimate_High" ColumnName="EPS Estimate High" />
+          <ScalarProperty Name="EPS_Estimate_Low" ColumnName="EPS Estimate Low" />
+          <ScalarProperty Name="EPS_Estimate_Mean" ColumnName="EPS Estimate Mean" />
+          <ScalarProperty Name="Ticker" ColumnName="Ticker" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

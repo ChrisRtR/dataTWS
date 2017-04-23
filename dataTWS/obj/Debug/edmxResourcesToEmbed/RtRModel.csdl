@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RtRTestModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TickerTest">
+    <Key>
+      <PropertyRef Name="Ticker" />
+    </Key>
+    <Property Name="Ticker" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="RtRTestEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TickerTests" EntityType="Self.TickerTest" />
+    <EntitySet Name="Quarterlies" EntityType="RtRTestModel.Quarterly" />
+  </EntityContainer>
+  <EntityType Name="Quarterly">
+    <Key>
+      <PropertyRef Name="Ticker" />
+    </Key>
+    <Property Name="Ticker" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EPS_Estimate_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EPS_Estimate_Low" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EPS_Estimate_High" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_Estimate_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_Estimate_Low" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_Estimate_High" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EPS_FY_2017" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EPS_FY_2018" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EPS_FY_2019" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EPS_FY_2020" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_FY_2017" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_FY_2018" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_FY_2019" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_FY_2020" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PE_2017" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PE_2018" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PE_2019" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PE_2020" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PS_2017" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PS_2018" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PS_2019" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PS_2020" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="EV_EBITDA_2017" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="EV_EBITDA_2018" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="EV_EBITDA_2019" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="EV_EBITDA_2020" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PBV_MRQ" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Dividend_Yield" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Beta" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

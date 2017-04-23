@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RewardTheRiskModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CompanyData">
+    <Key>
+      <PropertyRef Name="Ticker" />
+    </Key>
+    <Property Name="Ticker" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sector" Type="nvarchar" MaxLength="200" />
+    <Property Name="Industry" Type="nvarchar" MaxLength="200" />
+    <Property Name="DividendYield" Type="nvarchar" MaxLength="10" />
+    <Property Name="Beta" Type="nvarchar" MaxLength="10" />
+    <Property Name="PBV_MRQ" Type="nvarchar" MaxLength="10" />
+    <Property Name="PE_2017" Type="nvarchar" MaxLength="10" />
+    <Property Name="PE_2018" Type="nvarchar" MaxLength="10" />
+    <Property Name="PE_2019" Type="nvarchar" MaxLength="10" />
+    <Property Name="PE_2020" Type="nvarchar" MaxLength="10" />
+    <Property Name="PS_2017" Type="nvarchar" MaxLength="10" />
+    <Property Name="PS_2018" Type="nvarchar" MaxLength="10" />
+    <Property Name="PS_2019" Type="nvarchar" MaxLength="10" />
+    <Property Name="PS_2020" Type="nvarchar" MaxLength="10" />
+    <Property Name="EVEBITDA_2017" Type="nvarchar" MaxLength="10" />
+    <Property Name="EVEBITDA_2018" Type="nvarchar" MaxLength="10" />
+    <Property Name="EVEBITDA_2019" Type="nvarchar" MaxLength="10" />
+    <Property Name="EVEBITDA_2020" Type="nvarchar" MaxLength="10" />
+    <Property Name="EPS_FY2017_Mean" Type="nvarchar" MaxLength="50" />
+    <Property Name="EPS_FY2018_Mean" Type="nvarchar" MaxLength="50" />
+    <Property Name="EPS_FY2019_Mean" Type="nvarchar" MaxLength="50" />
+    <Property Name="EPS_FY2020_Mean" Type="nvarchar" MaxLength="50" />
+    <Property Name="Revenue_FY2017_Mean" Type="nvarchar" MaxLength="50" />
+    <Property Name="Revenue_FY2018_Mean" Type="nvarchar" MaxLength="50" />
+    <Property Name="Revenue_FY2019_Mean" Type="nvarchar" MaxLength="50" />
+    <Property Name="Revenue_FY2020_Mean" Type="nvarchar" MaxLength="50" />
+    <Property Name="EPS_Q12017_Mean" Type="nvarchar" MaxLength="50" />
+    <Property Name="EPS_Q12017_Low" Type="nvarchar" MaxLength="50" />
+    <Property Name="EPS_Q12017_High" Type="nvarchar" MaxLength="50" />
+    <Property Name="Revenue_Q12017_Mean" Type="nvarchar" MaxLength="50" />
+    <Property Name="Revenue_Q12017_Low" Type="nvarchar" MaxLength="50" />
+    <Property Name="Revenue_Q12017_High" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="RewardTheRiskModelStoreContainer">
+    <EntitySet Name="CompanyData" EntityType="Self.CompanyData" Schema="ChrisVermeer" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

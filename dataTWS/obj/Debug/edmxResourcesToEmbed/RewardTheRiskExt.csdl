@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RewardTheRiskModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CompanyData">
+    <Key>
+      <PropertyRef Name="Ticker" />
+    </Key>
+    <Property Name="Ticker" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sector" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Industry" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DividendYield" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Beta" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PBV_MRQ" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PE_2017" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PE_2018" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PE_2019" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PE_2020" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PS_2017" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PS_2018" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PS_2019" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PS_2020" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="EVEBITDA_2017" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="EVEBITDA_2018" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="EVEBITDA_2019" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="EVEBITDA_2020" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="EPS_FY2017_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EPS_FY2018_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EPS_FY2019_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EPS_FY2020_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_FY2017_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_FY2018_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_FY2019_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_FY2020_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EPS_Q12017_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EPS_Q12017_Low" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EPS_Q12017_High" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_Q12017_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_Q12017_Low" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_Q12017_High" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="RewardTheRiskEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CompanyData" EntityType="Self.CompanyData" />
+  </EntityContainer>
+</Schema>

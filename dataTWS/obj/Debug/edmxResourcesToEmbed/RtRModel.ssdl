@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RtRTestModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Quarterly">
+    <Key>
+      <PropertyRef Name="Ticker" />
+    </Key>
+    <Property Name="Ticker" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="EPS Estimate Mean" Type="nvarchar" MaxLength="50" />
+    <Property Name="EPS Estimate Low" Type="nvarchar" MaxLength="50" />
+    <Property Name="EPS Estimate High" Type="nvarchar" MaxLength="50" />
+    <Property Name="Revenue Estimate Mean" Type="nvarchar" MaxLength="50" />
+    <Property Name="Revenue Estimate Low" Type="nvarchar" MaxLength="50" />
+    <Property Name="Revenue Estimate High" Type="nvarchar" MaxLength="50" />
+    <Property Name="EPS FY 2017" Type="nvarchar" MaxLength="50" />
+    <Property Name="EPS FY 2018" Type="nvarchar" MaxLength="50" />
+    <Property Name="EPS FY 2019" Type="nvarchar" MaxLength="50" />
+    <Property Name="EPS FY 2020" Type="nvarchar" MaxLength="50" />
+    <Property Name="Revenue FY 2017" Type="nvarchar" MaxLength="20" />
+    <Property Name="Revenue FY 2018" Type="nvarchar" MaxLength="20" />
+    <Property Name="Revenue FY 2019" Type="nvarchar" MaxLength="20" />
+    <Property Name="Revenue FY 2020" Type="nvarchar" MaxLength="20" />
+    <Property Name="PE 2017" Type="nvarchar" MaxLength="10" />
+    <Property Name="PE 2018" Type="nvarchar" MaxLength="10" />
+    <Property Name="PE 2019" Type="nvarchar" MaxLength="10" />
+    <Property Name="PE 2020" Type="nvarchar" MaxLength="10" />
+    <Property Name="PS 2017" Type="nvarchar" MaxLength="10" />
+    <Property Name="PS 2018" Type="nvarchar" MaxLength="10" />
+    <Property Name="PS 2019" Type="nvarchar" MaxLength="10" />
+    <Property Name="PS 2020" Type="nvarchar" MaxLength="10" />
+    <Property Name="EV/EBITDA 2017" Type="nvarchar" MaxLength="20" />
+    <Property Name="EV/EBITDA 2018" Type="nvarchar" MaxLength="20" />
+    <Property Name="EV/EBITDA 2019" Type="nvarchar" MaxLength="20" />
+    <Property Name="EV/EBITDA 2020" Type="nvarchar" MaxLength="20" />
+    <Property Name="PBV MRQ" Type="nvarchar" MaxLength="10" />
+    <Property Name="Dividend Yield" Type="nvarchar" MaxLength="10" />
+    <Property Name="Beta" Type="nvarchar" MaxLength="10" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TickerTest">
+    <Key>
+      <PropertyRef Name="Ticker" />
+    </Key>
+    <Property Name="Ticker" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="RtRTestModelStoreContainer">
+    <EntitySet Name="Quarterly" EntityType="Self.Quarterly" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TickerTest" EntityType="Self.TickerTest" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

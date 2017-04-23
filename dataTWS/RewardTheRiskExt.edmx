@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="RewardTheRiskModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CompanyData">
+          <Key>
+            <PropertyRef Name="Ticker" />
+          </Key>
+          <Property Name="Ticker" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="CompanyName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Sector" Type="nvarchar" MaxLength="200" />
+          <Property Name="Industry" Type="nvarchar" MaxLength="200" />
+          <Property Name="DividendYield" Type="nvarchar" MaxLength="10" />
+          <Property Name="Beta" Type="nvarchar" MaxLength="10" />
+          <Property Name="PBV_MRQ" Type="nvarchar" MaxLength="10" />
+          <Property Name="PE_2017" Type="nvarchar" MaxLength="10" />
+          <Property Name="PE_2018" Type="nvarchar" MaxLength="10" />
+          <Property Name="PE_2019" Type="nvarchar" MaxLength="10" />
+          <Property Name="PE_2020" Type="nvarchar" MaxLength="10" />
+          <Property Name="PS_2017" Type="nvarchar" MaxLength="10" />
+          <Property Name="PS_2018" Type="nvarchar" MaxLength="10" />
+          <Property Name="PS_2019" Type="nvarchar" MaxLength="10" />
+          <Property Name="PS_2020" Type="nvarchar" MaxLength="10" />
+          <Property Name="EVEBITDA_2017" Type="nvarchar" MaxLength="10" />
+          <Property Name="EVEBITDA_2018" Type="nvarchar" MaxLength="10" />
+          <Property Name="EVEBITDA_2019" Type="nvarchar" MaxLength="10" />
+          <Property Name="EVEBITDA_2020" Type="nvarchar" MaxLength="10" />
+          <Property Name="EPS_FY2017_Mean" Type="nvarchar" MaxLength="50" />
+          <Property Name="EPS_FY2018_Mean" Type="nvarchar" MaxLength="50" />
+          <Property Name="EPS_FY2019_Mean" Type="nvarchar" MaxLength="50" />
+          <Property Name="EPS_FY2020_Mean" Type="nvarchar" MaxLength="50" />
+          <Property Name="Revenue_FY2017_Mean" Type="nvarchar" MaxLength="50" />
+          <Property Name="Revenue_FY2018_Mean" Type="nvarchar" MaxLength="50" />
+          <Property Name="Revenue_FY2019_Mean" Type="nvarchar" MaxLength="50" />
+          <Property Name="Revenue_FY2020_Mean" Type="nvarchar" MaxLength="50" />
+          <Property Name="EPS_Q12017_Mean" Type="nvarchar" MaxLength="50" />
+          <Property Name="EPS_Q12017_Low" Type="nvarchar" MaxLength="50" />
+          <Property Name="EPS_Q12017_High" Type="nvarchar" MaxLength="50" />
+          <Property Name="Revenue_Q12017_Mean" Type="nvarchar" MaxLength="50" />
+          <Property Name="Revenue_Q12017_Low" Type="nvarchar" MaxLength="50" />
+          <Property Name="Revenue_Q12017_High" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="RewardTheRiskModelStoreContainer">
+          <EntitySet Name="CompanyData" EntityType="Self.CompanyData" Schema="ChrisVermeer" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RewardTheRiskModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CompanyData">
+          <Key>
+            <PropertyRef Name="Ticker" />
+          </Key>
+          <Property Name="Ticker" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CompanyName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Sector" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Industry" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="DividendYield" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Beta" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PBV_MRQ" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PE_2017" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PE_2018" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PE_2019" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PE_2020" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PS_2017" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PS_2018" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PS_2019" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PS_2020" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="EVEBITDA_2017" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="EVEBITDA_2018" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="EVEBITDA_2019" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="EVEBITDA_2020" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="EPS_FY2017_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EPS_FY2018_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EPS_FY2019_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EPS_FY2020_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Revenue_FY2017_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Revenue_FY2018_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Revenue_FY2019_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Revenue_FY2020_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EPS_Q12017_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EPS_Q12017_Low" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EPS_Q12017_High" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Revenue_Q12017_Mean" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Revenue_Q12017_Low" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Revenue_Q12017_High" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="RewardTheRiskEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CompanyData" EntityType="Self.CompanyData" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RewardTheRiskModelStoreContainer" CdmEntityContainer="RewardTheRiskEntities">
+          <EntitySetMapping Name="CompanyData">
+            <EntityTypeMapping TypeName="RewardTheRiskModel.CompanyData">
+              <MappingFragment StoreEntitySet="CompanyData">
+                <ScalarProperty Name="Ticker" ColumnName="Ticker" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="Sector" ColumnName="Sector" />
+                <ScalarProperty Name="Industry" ColumnName="Industry" />
+                <ScalarProperty Name="DividendYield" ColumnName="DividendYield" />
+                <ScalarProperty Name="Beta" ColumnName="Beta" />
+                <ScalarProperty Name="PBV_MRQ" ColumnName="PBV_MRQ" />
+                <ScalarProperty Name="PE_2017" ColumnName="PE_2017" />
+                <ScalarProperty Name="PE_2018" ColumnName="PE_2018" />
+                <ScalarProperty Name="PE_2019" ColumnName="PE_2019" />
+                <ScalarProperty Name="PE_2020" ColumnName="PE_2020" />
+                <ScalarProperty Name="PS_2017" ColumnName="PS_2017" />
+                <ScalarProperty Name="PS_2018" ColumnName="PS_2018" />
+                <ScalarProperty Name="PS_2019" ColumnName="PS_2019" />
+                <ScalarProperty Name="PS_2020" ColumnName="PS_2020" />
+                <ScalarProperty Name="EVEBITDA_2017" ColumnName="EVEBITDA_2017" />
+                <ScalarProperty Name="EVEBITDA_2018" ColumnName="EVEBITDA_2018" />
+                <ScalarProperty Name="EVEBITDA_2019" ColumnName="EVEBITDA_2019" />
+                <ScalarProperty Name="EVEBITDA_2020" ColumnName="EVEBITDA_2020" />
+                <ScalarProperty Name="EPS_FY2017_Mean" ColumnName="EPS_FY2017_Mean" />
+                <ScalarProperty Name="EPS_FY2018_Mean" ColumnName="EPS_FY2018_Mean" />
+                <ScalarProperty Name="EPS_FY2019_Mean" ColumnName="EPS_FY2019_Mean" />
+                <ScalarProperty Name="EPS_FY2020_Mean" ColumnName="EPS_FY2020_Mean" />
+                <ScalarProperty Name="Revenue_FY2017_Mean" ColumnName="Revenue_FY2017_Mean" />
+                <ScalarProperty Name="Revenue_FY2018_Mean" ColumnName="Revenue_FY2018_Mean" />
+                <ScalarProperty Name="Revenue_FY2019_Mean" ColumnName="Revenue_FY2019_Mean" />
+                <ScalarProperty Name="Revenue_FY2020_Mean" ColumnName="Revenue_FY2020_Mean" />
+                <ScalarProperty Name="EPS_Q12017_Mean" ColumnName="EPS_Q12017_Mean" />
+                <ScalarProperty Name="EPS_Q12017_Low" ColumnName="EPS_Q12017_Low" />
+                <ScalarProperty Name="EPS_Q12017_High" ColumnName="EPS_Q12017_High" />
+                <ScalarProperty Name="Revenue_Q12017_Mean" ColumnName="Revenue_Q12017_Mean" />
+                <ScalarProperty Name="Revenue_Q12017_Low" ColumnName="Revenue_Q12017_Low" />
+                <ScalarProperty Name="Revenue_Q12017_High" ColumnName="Revenue_Q12017_High" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

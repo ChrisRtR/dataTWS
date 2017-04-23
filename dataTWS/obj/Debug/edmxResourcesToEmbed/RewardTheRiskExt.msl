@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RewardTheRiskModelStoreContainer" CdmEntityContainer="RewardTheRiskEntities">
+    <EntitySetMapping Name="CompanyData">
+      <EntityTypeMapping TypeName="RewardTheRiskModel.CompanyData">
+        <MappingFragment StoreEntitySet="CompanyData">
+          <ScalarProperty Name="Ticker" ColumnName="Ticker" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+          <ScalarProperty Name="Industry" ColumnName="Industry" />
+          <ScalarProperty Name="DividendYield" ColumnName="DividendYield" />
+          <ScalarProperty Name="Beta" ColumnName="Beta" />
+          <ScalarProperty Name="PBV_MRQ" ColumnName="PBV_MRQ" />
+          <ScalarProperty Name="PE_2017" ColumnName="PE_2017" />
+          <ScalarProperty Name="PE_2018" ColumnName="PE_2018" />
+          <ScalarProperty Name="PE_2019" ColumnName="PE_2019" />
+          <ScalarProperty Name="PE_2020" ColumnName="PE_2020" />
+          <ScalarProperty Name="PS_2017" ColumnName="PS_2017" />
+          <ScalarProperty Name="PS_2018" ColumnName="PS_2018" />
+          <ScalarProperty Name="PS_2019" ColumnName="PS_2019" />
+          <ScalarProperty Name="PS_2020" ColumnName="PS_2020" />
+          <ScalarProperty Name="EVEBITDA_2017" ColumnName="EVEBITDA_2017" />
+          <ScalarProperty Name="EVEBITDA_2018" ColumnName="EVEBITDA_2018" />
+          <ScalarProperty Name="EVEBITDA_2019" ColumnName="EVEBITDA_2019" />
+          <ScalarProperty Name="EVEBITDA_2020" ColumnName="EVEBITDA_2020" />
+          <ScalarProperty Name="EPS_FY2017_Mean" ColumnName="EPS_FY2017_Mean" />
+          <ScalarProperty Name="EPS_FY2018_Mean" ColumnName="EPS_FY2018_Mean" />
+          <ScalarProperty Name="EPS_FY2019_Mean" ColumnName="EPS_FY2019_Mean" />
+          <ScalarProperty Name="EPS_FY2020_Mean" ColumnName="EPS_FY2020_Mean" />
+          <ScalarProperty Name="Revenue_FY2017_Mean" ColumnName="Revenue_FY2017_Mean" />
+          <ScalarProperty Name="Revenue_FY2018_Mean" ColumnName="Revenue_FY2018_Mean" />
+          <ScalarProperty Name="Revenue_FY2019_Mean" ColumnName="Revenue_FY2019_Mean" />
+          <ScalarProperty Name="Revenue_FY2020_Mean" ColumnName="Revenue_FY2020_Mean" />
+          <ScalarProperty Name="EPS_Q12017_Mean" ColumnName="EPS_Q12017_Mean" />
+          <ScalarProperty Name="EPS_Q12017_Low" ColumnName="EPS_Q12017_Low" />
+          <ScalarProperty Name="EPS_Q12017_High" ColumnName="EPS_Q12017_High" />
+          <ScalarProperty Name="Revenue_Q12017_Mean" ColumnName="Revenue_Q12017_Mean" />
+          <ScalarProperty Name="Revenue_Q12017_Low" ColumnName="Revenue_Q12017_Low" />
+          <ScalarProperty Name="Revenue_Q12017_High" ColumnName="Revenue_Q12017_High" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
